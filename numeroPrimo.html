@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    const limiteDoFor = parseInt(prompt(`Qual número deseja verificar se é primo? `));
+    let divisivel = 0;
+    for (let controle = 1; controle <= limiteDoFor; controle++) {
+        if (limiteDoFor % controle === 0){
+            divisivel = divisivel + 1;
+        } 
+    } if (divisivel === 2) {
+        document.write(`O número ${limiteDoFor} é um número primo.`)
+    } else {
+        document.write(`O número ${limiteDoFor} não é um número primo.`)
+    }
+</script>
